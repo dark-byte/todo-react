@@ -10,7 +10,7 @@ function Form ({inputText, setInputText, todos, setTodos}){
     const addBtnOnclick = (e) =>{
         e.preventDefault();
         if (inputText) {
-            setTodos([...todos, {text: inputText, id: Math.random() * 1000}]);
+            setTodos([...todos, {text: inputText, id: Math.random() * 1000, checked: false}]);
         } else{
             console.error("Todo cannot be empty");
             alert("Error!\nTodo cannot be empty!")

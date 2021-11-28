@@ -1,12 +1,16 @@
+html{
+  height: 10vh;
+}
+
 body{
-  height: 100vh;
+  height: 100%;
   text-align: center;
-  background-size: contain;
   background: rgb(92,111,255);
   background: linear-gradient(0deg, rgba(92,111,255,1) 0%, rgba(190,220,255,1) 100%); 
   background-repeat: no-repeat;
-  font-family: 'Poppins';
-  overflow-y: hidden;
+  background-attachment: fixed;
+  font-family: 'Poppins';  
+  /* overflow-y: hidden; */
 }
 
 
@@ -33,6 +37,8 @@ input:focus{
 }
 
 button {
+  margin: 0;
+  height: 100%;
   background-color: rgb(52, 116, 255);
   color: white;
   border: none;
@@ -71,11 +77,32 @@ li{
   display: flex;
   justify-content: space-between;
   min-width: 350px;
-  width: 30vw;
+  width: 40vw;
   align-items: center;
+  padding: 0;
   padding-left: 10px;
+  box-shadow: rgb(103, 151, 255) 0px 5px 15px;
+}
+
+li label{
+  max-width: 70%;
+  justify-content: start;
+  text-align: start;
 }
 
 .delBtn{
   background-color: rgb(248, 101, 101);
+}
+
+.chkBtn{
+  background-color: rgb(61, 238, 61);
+}
+
+.unChkBtn{
+  background-color: rgb(52, 116, 255);
+}
+
+.strike{
+  text-decoration: line-through;
+  opacity: .5;
 }
